@@ -20,16 +20,24 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Aks-svg/drone-hackathon
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd smart-campus-sight-main
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Create a virtual environment and activate it...
+1. Open your powershell 
+2. python -m venv venv
+3. venv\Scripts\activate (This will activate you virtual environment)
+
+# Step 4: Install the necessary dependencies.
+npm install (to download all of the node modules)
+pip install -r backend/requirements.txt (to download all of the frameworks/modules mentioned in the requirements.txt)
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm start
+go to 'http://127.0.0.1:8000' or 'localhost:8000'
+
 ```
 
 **Edit a file directly in GitHub**
@@ -55,15 +63,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Ultralytics (YOLOV8)
+- FastAPI (Backend)
+- opencv-python
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/aed6f087-b11e-4434-9313-e5f193900dae) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
